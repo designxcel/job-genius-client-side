@@ -1,0 +1,34 @@
+[
+    {
+        "_id": "1",
+        "date":"August 31, 2021",
+        "author":"Alison Dawn",
+        "author_img":"https://i.ibb.co/k8CWvxD/37d75df5a8aebe746de58eb8784fb49f.jpg",
+        "title": "Attract Sales And Profits",
+        "img": "https://i.ibb.co/pJCRf03/bigstock-graph-scaled.webp",
+        "description": "Aliquam hendrerit sollicitudin purus, quis rutrum mi accumsan nec. Quisque bibendum orci ac nibh facilisis, at malesuada orci congue. Nullam tempus sollicitudin cursus. Ut et adipiscing erat. Curabitur this is a text link libero tempus congue.Duis mattis laoreet neque, et ornare neque sollicitudin at. Proin sagittis dolor sed mi elementum pretium. Donec et justo ante. Vivamus egestas sodales est, eu rhoncus urna semper eu. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer tristique elit lobortis purus bibendum, quis dictum metus mattis. Phasellus posuere felis sed eros porttitor mattis. Curabitur massa magna, tempor in blandit id, porta in ligula. Aliquam laoreet nisl massa, at interdum mauris sollicitudin et."
+    },
+
+    {
+        "_id": "2",
+        "date":"November 16, 2021",
+        "author":"Alison Becker",
+        "author_img":"https://i.ibb.co/StRfBvC/eric-ries.png",
+        "title": "5 Tips For Your Job Interviews",
+        "img": "https://i.ibb.co/vdRgMvT/ALL-financial-planning-bluewash-rgb-150.jpg",
+        "description": "Aliquam hendrerit sollicitudin purus, quis rutrum mi accumsan nec. Quisque bibendum orci ac nibh facilisis, at malesuada orci congue. Nullam tempus sollicitudin cursus. Ut et adipiscing erat. Curabitur this is a text link libero tempus congue.Duis mattis laoreet neque, et ornare neque sollicitudin at. Proin sagittis dolor sed mi elementum pretium. Donec et justo ante. Vivamus egestas sodales est, eu rhoncus urna semper eu. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer tristique elit lobortis purus bibendum, quis dictum metus mattis. Phasellus posuere felis sed eros porttitor mattis. Curabitur massa magna, tempor in blandit id, porta in ligula. Aliquam laoreet nisl massa, at interdum mauris sollicitudin et."
+    },
+
+    {
+        "_id": "3",
+        "date":"February 16, 2022",
+        "author":"Becker Peter",
+        "author_img":"https://i.ibb.co/StRfBvC/eric-ries.png",
+        "title": "Overworked Newspaper Editor",
+        "img": "https://i.ibb.co/vJpK790/jobline-blog-12-3.jpg",
+        "description": "Aliquam hendrerit sollicitudin purus, quis rutrum mi accumsan nec. Quisque bibendum orci ac nibh facilisis, at malesuada orci congue. Nullam tempus sollicitudin cursus. Ut et adipiscing erat. Curabitur this is a text link libero tempus congue.Duis mattis laoreet neque, et ornare neque sollicitudin at. Proin sagittis dolor sed mi elementum pretium. Donec et justo ante. Vivamus egestas sodales est, eu rhoncus urna semper eu. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer tristique elit lobortis purus bibendum, quis dictum metus mattis. Phasellus posuere felis sed eros porttitor mattis. Curabitur massa magna, tempor in blandit id, porta in ligula. Aliquam laoreet nisl massa, at interdum mauris sollicitudin et."
+    }
+
+    
+    
+]
