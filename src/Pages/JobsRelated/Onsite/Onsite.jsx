@@ -10,7 +10,7 @@ const Onsite = ({onsite}) => {
                 <h2>Job Title: {job_title}</h2>
                 <p>Salary: {salary}</p>
                 <p>Job Type: {job_type}</p>
-                <Link>
+                <Link to={`/jobdetails/${_id}`}>
                     <button className="py-3 px-5 text-white text-xl rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500">Details</button>
                 </Link>
             </div>
