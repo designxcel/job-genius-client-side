@@ -44,7 +44,9 @@ const Navbar = () => {
                 </ul>
                 </div>
                
-                <img className="h-12" src={logoMain} alt="" />
+                <Link to="/">
+                    <img className="h-12" src={logoMain} alt="" />
+                </Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu-horizontal px-1">
@@ -55,8 +57,9 @@ const Navbar = () => {
                 <div>
                     {
                         user?.email? <div className="flex gap-5 items-center">
-                        <p>{user.email}</p>
+                        <p>{user?.email}</p>
                         <li className="list-none text-blue-600 font-bold bg-yellow-400 py-2 px-4 rounded-lg"><button onClick={handleLogout}>Logout</button></li>
+                        <img src={user?.photoURL} alt="" />
                         </div>
                         :
                         <li className="list-none"><Link to="/login">Login</Link></li>

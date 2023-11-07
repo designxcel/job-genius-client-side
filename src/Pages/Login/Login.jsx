@@ -66,7 +66,9 @@ const Login = () => {
     return (
         <div style={{backgroundImage: `url(${BGlogin})`}} className="flex justify-center items-center h-[100vh]">
             <div className="">
-                
+                <Link to="/">
+                    <h2 className="btn btn-primary">Back to Home</h2>
+                </Link>
                 <div className="h-auto bg-gradient-to-t from-blue-200 to-transparent p-10 w-96 rounded-lg">
                     <div className="text-center mb-5">
                         <h1 className="text-5xl text-gray-800 font-bold">Login now!</h1>

@@ -17,7 +17,7 @@ const Advertise = () => {
             <h2 className="text-gray-700 mt-10 text-center font-bold text-3xl">Recent News Articles</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-8">
                 {
-                    newArticles.map(article =><AdvertiseBoard article={article}></AdvertiseBoard>)
+                    newArticles.map(article =><AdvertiseBoard key={article._id} article={article}></AdvertiseBoard>)
                 }
             </div>
         </div>
