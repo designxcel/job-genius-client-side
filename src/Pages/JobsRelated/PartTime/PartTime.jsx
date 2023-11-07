@@ -1,7 +1,7 @@
-import React from 'react';
 
-const Hybrid = ({hybrid}) => {
-    const {job_title, job_type, post_date, deadline, salary, applicants, Company_name, job_details} = hybrid;
+
+const PartTime = ({partTime}) => {
+    const {job_title, job_type, post_date, deadline, salary, applicants, Company_name, job_details} = partTime;
 
     return (
             <div className="bg-white shadow-md space-y-2 rounded-lg p-5 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  duration-300">
@@ -14,4 +14,4 @@ const Hybrid = ({hybrid}) => {
     );
 };
 
-export default Hybrid;
+export default PartTime;

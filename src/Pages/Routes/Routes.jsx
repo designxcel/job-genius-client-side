@@ -3,13 +3,13 @@ import Root from "../Root/Root";
 import Home from "../Home/Home";
 import Login from "../Login/Login";
 import Signup from "../Signup/Signup";
+import JobDetails from "../JobDetails/JobDetails";
 
 
 const Routes = createBrowserRouter([
     {
         path: '/',
         element: <Root></Root>,
-        errorElement: <Error></Error>,
         children : [
             {
                 path: '/',
@@ -22,6 +22,11 @@ const Routes = createBrowserRouter([
             {
                 path: '/signup',
                 element: <Signup></Signup>
+            },
+            {
+                path:'/jobdetails/:id',
+                element: <JobDetails></JobDetails>,
+                loader: ({params})=> fetch(`http://localhost:5000/jobs/${params.id}`)
             }
         ]
     }
