@@ -21,7 +21,7 @@ const Navbar = () => {
         {
             user?.email? <>
             <li className="mr-6"><Link to="/addjob">Add a Job</Link></li>
-            <li className="mr-6"><Link to="/myjob">My Jobs</Link></li>
+            <li className="mr-6"><Link to="/myjobs">My Jobs</Link></li>
             <li className="mr-6"><Link to="/appliedjob">Applied Jobs</Link></li>
             </>
             :
