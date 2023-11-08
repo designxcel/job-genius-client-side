@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logoMain from "../../../assets/Logo/logoIcon.png"
 import { useContext } from "react";
 import { AuthContext } from "../../Provider/AuthProvider";
@@ -17,23 +17,23 @@ const Navbar = () => {
       }
 
     const menus = <>
-        <li className="mr-6"><Link to="/">Home</Link></li>
+        <li className="mr-6"><NavLink to="/">Home</NavLink></li>
         {
             user?.email? <>
-            <li className="mr-6"><Link to="/addjob">Add a Job</Link></li>
-            <li className="mr-6"><Link to="/myjobs">My Jobs</Link></li>
-            <li className="mr-6"><Link to="/appliedJobs">Applied Jobs</Link></li>
+            <li className="mr-6"><NavLink to="/addjob">Add a Job</NavLink></li>
+            <li className="mr-6"><NavLink to="/myjobs">My Jobs</NavLink></li>
+            <li className="mr-6"><NavLink to="/appliedJobs">Applied Jobs</NavLink></li>
             </>
             :
-            <li className="mr-6"><Link to="/all-jobs">All Jobs</Link></li>
+            <li className="mr-6"><NavLink to="/all-jobs">All Jobs</NavLink></li>
             
         }
-        <li className="mr-6"><Link to="/blogs">Blogs</Link></li>
+        <li className="mr-6"><NavLink to="/blogs">Blogs</NavLink></li>
         
         
     </>
     return (
-        <div className="navbar p-10">
+        <div className="navbar p-10 text-gray-600">
             <div className="navbar-start">
                 <div className="dropdown">
                 <label tabIndex={0} className="btn btn-ghost lg:hidden">
