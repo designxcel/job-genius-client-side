@@ -15,31 +15,31 @@ const NewTabs = () => {
   const [partTimeJobs, setPartTimeJobs] = useState([])
 
   useEffect(() =>{
-      fetch('http://localhost:5000/jobs')
+      fetch('https://assignment-11-server-side-topaz.vercel.app/jobs')
       .then(res => res.json())
       .then(data => setAllJobs(data))
   },[])
 
   useEffect(() =>{
-    fetch('http://localhost:5000/jobs/onsite')
+    fetch('https://assignment-11-server-side-topaz.vercel.app/jobs/onsite')
     .then(res => res.json())
     .then(data => setOnsiteJobs(data))
   },[])
 
   useEffect(() =>{
-    fetch('http://localhost:5000/jobs/remote')
+    fetch('https://assignment-11-server-side-topaz.vercel.app/jobs/remote')
     .then(res => res.json())
     .then(data => setRemoteJobs(data))
   },[])
 
   useEffect(() =>{
-    fetch('http://localhost:5000/jobs/hybrid')
+    fetch('https://assignment-11-server-side-topaz.vercel.app/jobs/hybrid')
     .then(res => res.json())
     .then(data => setHybridJobs(data))
   },[])
 
   useEffect(() =>{
-    fetch('http://localhost:5000/jobs/part-time')
+    fetch('https://assignment-11-server-side-topaz.vercel.app/jobs/part-time')
     .then(res => res.json())
     .then(data => setPartTimeJobs(data))
   },[])

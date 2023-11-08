@@ -10,7 +10,7 @@ const MyJobs = () => {
     const {user} = useContext(AuthContext)
     const [myPostedJobs, setPostedJobs] = useState([])
 
-    const url = `http://localhost:5000/myjobs?email=${user?.email}`;
+    const url = `https://assignment-11-server-side-topaz.vercel.app/myjobs?email=${user?.email}`;
         useEffect(() => {
             fetch(url)
             .then(res => res.json())
@@ -28,7 +28,7 @@ const MyJobs = () => {
                 confirmButtonText: "Yes, delete it!"
               }).then((result) => {
                 if (result.isConfirmed) {
-                    fetch(`http://localhost:5000/myjobs/${id}`, {
+                    fetch(`https://assignment-11-server-side-topaz.vercel.app/myjobs/${id}`, {
                         method: 'DELETE'
                     })
                     .then(res => res.json())

@@ -13,7 +13,7 @@ const AppliedJobs = () => {
     const {user} = useContext(AuthContext)
     const [appliedJobs, setAppliedJobs] = useState([])
 
-    const url = `http://localhost:5000/resume?email=${user?.email}`;
+    const url = `https://assignment-11-server-side-topaz.vercel.app/resume?email=${user?.email}`;
     useEffect(() => {
         fetch(url)
         .then(res => res.json())
@@ -31,7 +31,7 @@ const AppliedJobs = () => {
             confirmButtonText: "Yes, delete it!"
           }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`http://localhost:5000/resume/${id}`, {
+                fetch(`https://assignment-11-server-side-topaz.vercel.app/resume/${id}`, {
                     method: 'DELETE'
                 })
                 .then(res => res.json())
@@ -54,7 +54,7 @@ const AppliedJobs = () => {
     }
 
     const handleStatus = id => {
-        fetch(`http://localhost:5000/resume/${id}`,{
+        fetch(`https://assignment-11-server-side-topaz.vercel.app/resume/${id}`,{
             method: 'PATCH',
             headers: {
                 'content-type': 'application/json'

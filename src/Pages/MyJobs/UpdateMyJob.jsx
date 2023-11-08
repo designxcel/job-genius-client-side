@@ -25,7 +25,7 @@ const UpdateMyJob = () => {
         const updatedJobsPost = {
             jobTitle, jobType, email, salary, postDate, deadline, jobDesc, name
         }
-        fetch(`http://localhost:5000/myjobs/${_id}`, {
+        fetch(`https://assignment-11-server-side-topaz.vercel.app/myjobs/${_id}`, {
             method: 'PUT',
             headers:{
                 'content-type':'application/json'

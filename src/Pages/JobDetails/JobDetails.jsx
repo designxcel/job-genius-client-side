@@ -30,7 +30,7 @@ const JobDetails = () => {
             url
         }
         // console.log(name, email, url)
-        fetch('http://localhost:5000/resume',{
+        fetch('https://assignment-11-server-side-topaz.vercel.app/resume',{
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

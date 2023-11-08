@@ -35,7 +35,7 @@ const Routes = createBrowserRouter([
             {
                 path:'/jobdetails/:id',
                 element: <PrivateRoute><JobDetails></JobDetails></PrivateRoute>,
-                loader: ({params})=> fetch(`http://localhost:5000/jobs/${params.id}`)
+                loader: ({params})=> fetch(`https://assignment-11-server-side-topaz.vercel.app/jobs/${params.id}`)
             },
             {
                 path: '/addjob',
@@ -48,7 +48,7 @@ const Routes = createBrowserRouter([
             {
                 path: '/updatemyjob/:id',
                 element: <UpdateMyJob></UpdateMyJob>,
-                loader: ({params}) => fetch(`http://localhost:5000/myjobs/${params.id}`)
+                loader: ({params}) => fetch(`https://assignment-11-server-side-topaz.vercel.app/myjobs/${params.id}`)
             },
             {
                 path: '/appliedJobs',
@@ -57,7 +57,7 @@ const Routes = createBrowserRouter([
             {
                 path: '/all-jobs',
                 element: <AllJobs></AllJobs>,
-                loader: () => fetch('http://localhost:5000/jobs')
+                loader: () => fetch('https://assignment-11-server-side-topaz.vercel.app/jobs')
             },
             {
                 path: '/blogs',

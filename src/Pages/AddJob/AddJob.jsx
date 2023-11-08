@@ -25,7 +25,7 @@ const AddJob = () => {
 
         // console.log(jobTitle, jobType, email, salary, postDate, deadline, jobDesc)
 
-        fetch('http://localhost:5000/myjobs',{
+        fetch('https://assignment-11-server-side-topaz.vercel.app/myjobs',{
             method: 'POST',
             headers: {
                 "content-type": "application/json"

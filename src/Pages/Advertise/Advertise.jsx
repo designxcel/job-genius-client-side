@@ -7,7 +7,7 @@ const Advertise = () => {
     const [newArticles, setNewArticles] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:5000/articles')
+        fetch('https://assignment-11-server-side-topaz.vercel.app/articles')
         .then(res => res.json())
         .then(data=> setNewArticles(data))
     },[])
