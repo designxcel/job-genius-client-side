@@ -42,7 +42,8 @@ const Routes = createBrowserRouter([
             },
             {
                 path: '/updatemyjob/:id',
-                element: <UpdateMyJob></UpdateMyJob>
+                element: <UpdateMyJob></UpdateMyJob>,
+                loader: ({params}) => fetch(`http://localhost:5000/myjobs/${params.id}`)
             }
         ]
     }
