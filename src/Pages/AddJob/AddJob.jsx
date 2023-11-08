@@ -81,7 +81,7 @@ const AddJob = () => {
                     {/* <label className="label mt-5">
                         <p className="text-blue-700 font-semibold">Already have an account? <Link className="text-red-600 font-bold underline" to="/login">Login</Link></p>
                     </label> */}
-                </form>
+            </form>
 
                 <Footer></Footer>
             
