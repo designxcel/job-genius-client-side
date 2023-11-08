@@ -1,8 +1,8 @@
 import { FaTimes } from 'react-icons/fa';
 import Swal from 'sweetalert2';
 
-const DisplayAppliedJobs = ({appliedJob, handleDelete}) => {
-    const{_id, name, email, url} = appliedJob
+const DisplayAppliedJobs = ({appliedJob, handleDelete, handleStatus}) => {
+    const{_id, name, email, url, status} = appliedJob
 
     
     return (
@@ -18,7 +18,12 @@ const DisplayAppliedJobs = ({appliedJob, handleDelete}) => {
                 </div>
             </div>
             <div>
-                <button className="btn btn-primary">Accepted</button>
+                {
+                    status === 'Accepted' ? 
+                        <button onClick={()=>handleStatus(_id)} className="btn btn-secondary">Accepted</button>
+                        :
+                        <button onClick={()=>handleStatus(_id)} className="btn btn-primary">Received</button>
+                }
             </div>
         </div>
     );

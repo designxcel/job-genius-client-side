@@ -5,15 +5,17 @@ const Footer = () => {
     return (
         <footer className="footer p-10 bg-white">
             <div>
+                <Link>
                 <img src={logoMain} alt="" />
-                {/* <p>Everything you need to succeed is always inside you. </p> */}
+                </Link>
+                
             </div> 
             <nav>
                 <header className="footer-title">Services</header> 
                 <Link to="/">Home</Link>
-                <Link to="/">All Jobs</Link>
-                <Link to="/">Blogs</Link>
-                {/* <a className="link link-hover">Advertisement</a> */}
+                <Link to="/all-jobs">All Jobs</Link>
+                <Link to="/blogs">Blogs</Link>
+                
             </nav> 
             <nav>
                 <header className="footer-title">Company</header> 

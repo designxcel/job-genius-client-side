@@ -7,6 +7,7 @@ import DisplayAppliedJobs from './DisplayAppliedJobs';
 import Navbar from '../Shared/Navbar/Navbar';
 import Footer from '../Shared/Footer/Footer';
 import Swal from 'sweetalert2';
+import app from '../../firebase.config';
 
 const AppliedJobs = () => {
     const {user} = useContext(AuthContext)
@@ -51,6 +52,27 @@ const AppliedJobs = () => {
             }
           });
     }
+
+    const handleStatus = id => {
+        fetch(`http://localhost:5000/resume/${id}`,{
+            method: 'PATCH',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify({status: 'Accepted'})
+        })
+        .then(res => res.json())
+        .then(data => {
+            console.log(data)
+            if(data.modifiedCount > 0){
+                const remaining = appliedJobs.filter(resume => resume._id !== id);
+                const updated = appliedJobs.find(resume => resume._id === id);
+                updated.status = 'Accepted'
+                const newResume = [updated, ...remaining];
+                setAppliedJobs(newResume);
+            }
+        })
+    }
     return (
         <div>
             <Navbar></Navbar>
@@ -63,6 +85,7 @@ const AppliedJobs = () => {
                         key={appliedJob._id} 
                         appliedJob={appliedJob}
                         handleDelete = {handleDelete}
+                        handleStatus = {handleStatus}
                         ></DisplayAppliedJobs>)
                 }
             </div>

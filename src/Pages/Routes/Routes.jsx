@@ -9,12 +9,16 @@ import AddJob from "../AddJob/AddJob";
 import MyJobs from "../MyJobs/MyJobs";
 import UpdateMyJob from "../MyJobs/UpdateMyJob";
 import AppliedJobs from "../AppliedJobs/AppliedJobs";
+import AllJobs from "../AllJobs/AllJobs";
+import Error from "../Error/Error";
+import Blogs from "../Blogs/Blogs";
 
 
 const Routes = createBrowserRouter([
     {
         path: '/',
         element: <Root></Root>,
+        errorElement: <Error></Error>,
         children : [
             {
                 path: '/',
@@ -49,6 +53,15 @@ const Routes = createBrowserRouter([
             {
                 path: '/appliedJobs',
                 element: <PrivateRoute><AppliedJobs></AppliedJobs></PrivateRoute>
+            },
+            {
+                path: '/all-jobs',
+                element: <AllJobs></AllJobs>,
+                loader: () => fetch('http://localhost:5000/jobs')
+            },
+            {
+                path: '/blogs',
+                element:<Blogs></Blogs>
             }
         ]
     }

@@ -49,7 +49,7 @@ const JobDetails = () => {
                     imageHeight: 100,
                     imageAlt: 'Custom image',
                   })
-            }
+            } 
         })
     }
 
