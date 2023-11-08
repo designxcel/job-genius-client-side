@@ -22,7 +22,7 @@ const Navbar = () => {
             user?.email? <>
             <li className="mr-6"><Link to="/addjob">Add a Job</Link></li>
             <li className="mr-6"><Link to="/myjobs">My Jobs</Link></li>
-            <li className="mr-6"><Link to="/appliedjob">Applied Jobs</Link></li>
+            <li className="mr-6"><Link to="/appliedJobs">Applied Jobs</Link></li>
             </>
             :
             <li className="mr-6"><Link to="/all-jobs">All Jobs</Link></li>
