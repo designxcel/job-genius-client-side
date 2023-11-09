@@ -1,9 +1,13 @@
 import { Link } from "react-router-dom";
 import logoMain from "../../../assets/Logo/logoIcon.png"
+import { FaFacebook } from 'react-icons/fa';
+import { FaDribbble } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
+
 
 const Footer = () => {
     return (
-        <footer className="footer p-10 bg-white">
+        <footer className="footer p-10 bg-white text-gray-600">
             <div>
                 <Link>
                 <img src={logoMain} alt="" />
@@ -25,10 +29,25 @@ const Footer = () => {
                 <a className="link link-hover">Press kit</a>
             </nav> 
             <nav>
-                <header className="footer-title">Legal</header> 
-                <a className="link link-hover">Terms of use</a> 
-                <a className="link link-hover">Privacy policy</a> 
-                <a className="link link-hover">Cookie policy</a>
+                {/* <header className="footer-title flex">Social Links</header>  */}
+                <h2 className="text-center">Social Links</h2>
+                <div className="flex gap-4 text-white">
+                <div className="bg-yellow-500 rounded-full p-2">
+                    <Link>
+                        <FaFacebook></FaFacebook>
+                    </Link>
+                </div>
+                <div className="bg-yellow-500 rounded-full p-2">
+                    <Link>
+                    <FaDribbble></FaDribbble>
+                </Link>
+                </div>
+                <div className="bg-yellow-500 rounded-full p-2">
+                    <Link>
+                    <FaGithub></FaGithub>
+                    </Link>
+                </div>
+                </div>
             </nav>
         </footer>
     );

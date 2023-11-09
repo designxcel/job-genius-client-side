@@ -16,7 +16,7 @@ const ExtraSection = () => {
                     <li>But I must explain to you how all this</li>
                 </div>
                 <div className="mt-10">
-                <Link>
+                <Link to="/all-jobs">
                     <button className="btn btn-secondary">View Details</button>
                 </Link>
                 </div>
