@@ -10,6 +10,7 @@ const AddJob = () => {
     const {user} = useContext(AuthContext)
     const handleAddJob = e => {
         e.preventDefault();
+        
         const form = e.target;
 
         const jobTitle = form.jobTitle.value;
@@ -25,7 +26,7 @@ const AddJob = () => {
         }
 
         // console.log(jobTitle, jobType, email, salary, postDate, deadline, jobDesc)
-
+        form.reset()
         fetch('https://assignment-11-server-side-topaz.vercel.app/myjobs',{
             method: 'POST',
             headers: {

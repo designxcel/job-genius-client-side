@@ -22,7 +22,8 @@ const Signup = () => {
         const password = form.password.value;
 
         console.log(name, email, password, photo)
-        // form.reset();
+
+        form.reset();
         if(password.length < 6){
             
             Swal.fire({
