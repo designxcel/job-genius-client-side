@@ -8,6 +8,7 @@ import Navbar from '../Shared/Navbar/Navbar';
 import Footer from '../Shared/Footer/Footer';
 import Swal from 'sweetalert2';
 import app from '../../firebase.config';
+import { Helmet } from 'react-helmet-async';
 
 const AppliedJobs = () => {
     const {user} = useContext(AuthContext)
@@ -75,6 +76,9 @@ const AppliedJobs = () => {
     }
     return (
         <div>
+            <Helmet>
+                <title>Job Genius | Applied Job</title>
+            </Helmet>
             <Navbar></Navbar>
             <div className="bg-gradient-to-r from-cyan-500 to-blue-500 h-52 items-center flex justify-center">
                 <h2 className=" text-white text-5xl font-bold">Applied Jobs </h2>

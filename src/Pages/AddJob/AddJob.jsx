@@ -3,6 +3,7 @@ import Footer from "../Shared/Footer/Footer";
 import Navbar from "../Shared/Navbar/Navbar";
 import { AuthContext } from "../Provider/AuthProvider";
 import Swal from "sweetalert2";
+import { Helmet } from "react-helmet-async";
 
 
 const AddJob = () => {
@@ -50,6 +51,9 @@ const AddJob = () => {
     }
     return (
         <div>
+            <Helmet>
+                <title>Job Genius | Add Job</title>
+            </Helmet>
             <Navbar></Navbar>
             <div className="bg-gradient-to-r from-cyan-500 to-blue-500 h-52 items-center flex justify-center">
                 <h2 className=" text-white text-5xl font-bold">Add a JOB</h2>

@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import Footer from "../Shared/Footer/Footer";
 import Navbar from "../Shared/Navbar/Navbar";
 
@@ -5,6 +6,9 @@ import Navbar from "../Shared/Navbar/Navbar";
 const Blogs = () => {
     return (
         <div>
+            <Helmet>
+                <title>Job Genius | Blogs</title>
+            </Helmet>
             <Navbar></Navbar>
             <div className="bg-gradient-to-r from-cyan-500 to-blue-500 h-52 items-center flex justify-center">
                 <h2 className=" text-white text-5xl font-bold">BLOGS</h2>

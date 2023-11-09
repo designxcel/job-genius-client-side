@@ -8,6 +8,7 @@ import { useContext } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
 import logo from "../../assets/Logo/logoIcon.png"
 import Swal from "sweetalert2";
+import { Helmet } from "react-helmet-async";
 
 
 const JobDetails = () => {
@@ -55,6 +56,9 @@ const JobDetails = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>Job Genius | Job Details</title>
+            </Helmet>
             <Navbar></Navbar>
             <div className="bg-gradient-to-r from-cyan-500 to-blue-500 h-52 items-center flex justify-center">
                 <h2 className=" text-white text-5xl font-bold">Vacancy for: {job_title}</h2>

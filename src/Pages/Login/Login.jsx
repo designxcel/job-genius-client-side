@@ -6,6 +6,7 @@ import Swal from "sweetalert2";
 import { FaGoogle } from 'react-icons/fa';
 import { GoogleAuthProvider, getAuth, signInWithPopup } from "firebase/auth";
 import app from "../../firebase.config";
+import { Helmet } from "react-helmet-async";
 
 
 const Login = () => {
@@ -65,6 +66,9 @@ const Login = () => {
     
     return (
         <div style={{backgroundImage: `url(${BGlogin})`}} className="flex justify-center items-center h-[100vh]">
+            <Helmet>
+                <title>Job Genius | Login</title>
+            </Helmet>
             <div className="">
                 <Link to="/">
                     <h2 className="btn btn-primary">Back to Home</h2>

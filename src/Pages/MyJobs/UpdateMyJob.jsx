@@ -3,6 +3,7 @@ import { AuthContext } from "../Provider/AuthProvider";
 import { useLoaderData } from "react-router-dom";
 import Navbar from "../Shared/Navbar/Navbar";
 import Swal from "sweetalert2";
+import { Helmet } from "react-helmet-async";
 
 
 const UpdateMyJob = () => {
@@ -49,6 +50,9 @@ const UpdateMyJob = () => {
     }
     return (
         <div>
+            <Helmet>
+                <title>Job Genius | Update Job</title>
+            </Helmet>
             <Navbar></Navbar>
             
             <div className="bg-gradient-to-r from-cyan-500 to-blue-500 h-52 items-center flex justify-center">

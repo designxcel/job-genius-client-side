@@ -2,6 +2,7 @@ import { Link, useLoaderData } from "react-router-dom";
 import Footer from "../Shared/Footer/Footer";
 import Navbar from "../Shared/Navbar/Navbar";
 import DisplayAllJobs from "./DisplayAllJobs";
+import { Helmet } from "react-helmet-async";
 
 
 const AllJobs = () => {
@@ -9,6 +10,9 @@ const AllJobs = () => {
     const {_id, job_title, job_type, post_date, deadline, salary, applicants, Company_name, job_details} = allTypeJobs
     return (
         <div>
+            <Helmet>
+                <title>Job Genius | All-Jobs</title>
+            </Helmet>
             <Navbar></Navbar>
             <div>
             <div className="bg-gradient-to-r from-cyan-500 to-blue-500 h-52 items-center flex justify-center">

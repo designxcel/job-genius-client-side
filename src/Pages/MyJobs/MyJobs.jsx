@@ -4,6 +4,7 @@ import MyJobsDisplay from "./MyJobsDisplay";
 import Navbar from "../Shared/Navbar/Navbar";
 import Footer from "../Shared/Footer/Footer";
 import Swal from "sweetalert2";
+import { Helmet } from "react-helmet-async";
 
 
 const MyJobs = () => {
@@ -51,6 +52,9 @@ const MyJobs = () => {
         }
     return (
         <div>
+            <Helmet>
+                <title>Job Genius | My Jobs</title>
+            </Helmet>
             <Navbar></Navbar>
             <h2 className="text-center text-xl font-bold">My jobs: {myPostedJobs.length}</h2>
             <div className="space-y-4 p-14">

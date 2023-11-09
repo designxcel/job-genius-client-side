@@ -5,6 +5,7 @@ import { useContext } from "react";
 import { AuthContext } from "../Provider/AuthProvider";
 import Swal from "sweetalert2";
 import Navbar from "../Shared/Navbar/Navbar";
+import { Helmet } from "react-helmet-async";
 
 const Signup = () => {
     const {createNewUser} = useContext(AuthContext);
@@ -74,6 +75,9 @@ const Signup = () => {
 
     return (
         <div>
+            <Helmet>
+                <title>Job Genius | Signup</title>
+            </Helmet>
             <Navbar></Navbar>
             <div style={{backgroundImage: `url(${BGlogin})`}} className="flex justify-center items-center h-[100vh]">
             <div className="">

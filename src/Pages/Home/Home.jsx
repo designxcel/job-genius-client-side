@@ -7,10 +7,16 @@ import Testimonial from "../Shared/Slider/Testimonial";
 import NewTabs from "../Tabs/NewTabs";
 import bannerImg from "../../assets/Extra/banner1.jpg"
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 
 const Home = () => {
     return (
         <div>
+            <Helmet>
+                <title>
+                    Job Genius | Home
+                </title>
+            </Helmet>
             <Navbar></Navbar>
             <div className="relative">
                 <img src={bannerImg} alt="" />
