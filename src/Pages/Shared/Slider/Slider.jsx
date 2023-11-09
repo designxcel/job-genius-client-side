@@ -10,6 +10,7 @@ const images = [
 
 ];
 
+
 const App = () => {
   return (
     <div>
