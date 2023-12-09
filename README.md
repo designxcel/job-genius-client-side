@@ -1,8 +1,15 @@
-# React + Vite
+# Job Portal (Project Name - Job Genius)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Live Link  - https://job-portal-7afad.web.app/
 
-Currently, two official plugins are available:
+##### About this project
+---------------------------------------------------------------------------------------------------------
+1. Here you can find every kind of job (Onsite, remote, part-time, hybrid, full-time)
+2. It has a small description
+3. if you want then you can apply through this portal. 
+4. it has option to post any kind of jobs
+5. once applied you can see the applied jobs.
+6. You can also edit your posted job if you want.
+7. site has proper authentication system.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+and more will be added soon...
